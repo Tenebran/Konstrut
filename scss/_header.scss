@@ -1,0 +1,109 @@
+.content__conteiner__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    max-height: 65px;
+    padding: 24px 0;
+    border-bottom: 1px solid $Border-colorGrey;
+    position: sticky;
+    top: 0;
+    background-color: $background-colorWhite;
+    z-index: 100;
+    user-select: none;
+
+    &__logo{
+        
+        &__icon{
+            display: block;
+            background: url(../img/icon/projeco-logo-black.png) no-repeat;
+            background-size: cover;
+            width: 80px;
+            height: 18px;
+        }
+    }
+
+    &__nav{
+    font-family: $OpenSans-Font;
+    font-weight: $solidFontWeight;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.09091px;
+
+        &__link{
+            color: $text-color;
+            
+            &:not(:first-child){
+                padding: 0 0 0 30px;
+            }
+
+            &:hover{
+               color: $text-colorHover;
+               transition: 1.5s;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: $smDesktopWidth){
+  
+    .header__button_open + .header__link{
+        display: block;
+    }
+
+    
+
+    .header__link{
+        display: none;
+        background-color: white;  
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+      
+        &__button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px ;
+            height: 60px;
+            background: url(../img/icon/icons8-menu.png) no-repeat;
+            background-size: cover;
+            cursor: pointer;
+            &_open{
+               
+                background: url(../img/icon/icons8-close.png);
+                background-size: cover;
+            }
+        }
+        &__link{
+            position: fixed;
+            flex-direction: column;
+            top: 65px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 15px 0 0;
+        }
+     &__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        &__link{
+            margin: 0 0 20px;
+            &:not(:first-child){
+                padding: 0 0 0 0px;
+            }
+        }
+    }
+}
+}
+

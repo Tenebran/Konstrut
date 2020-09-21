@@ -1,0 +1,12 @@
+.footer{
+    &__wrapper__block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__links__block{
+        display: flex;
+        justify-content: space-between;
+    }
+}

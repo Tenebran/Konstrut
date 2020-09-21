@@ -1,0 +1,129 @@
+.footer{
+    padding: 42px 0 0;
+    background: $background-colordarkblue;
+    color: $background-colorWhite;
+
+    &__company__block{
+        max-width: 250px;
+    }
+
+    &__logo{
+        margin: 20px 0 16px;
+    &__icon{
+        display: block;
+        background: url(../img/icon/projeco-logo.png) no-repeat;
+        background-size: cover;
+        width: 95px;
+        height: 20px;
+    }
+}
+
+&__title{
+font-family: $OpenSans-Font;
+font-size: 11px;
+line-height: 15px;
+letter-spacing: 0.846154px;
+color: $background-colorWhite;
+opacity: 0.8;
+}
+
+&__text{
+    font-family: $OpenSans-Font;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+    color: $background-colorWhite;
+    opacity: 0.8;
+}
+
+&__links{
+    font-family: $OpenSans-Font;
+font-size: 11px;
+line-height: 15px;
+letter-spacing: 0.846154px;
+color: $background-colorWhite;
+
+&__section2{
+    margin-top: 30px;
+}
+
+&__name{
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+&__link{
+    display: inline-block;
+    font-family: $OpenSans-Font;
+font-size: 11px;
+line-height: 15px;
+letter-spacing: 0.846154px;
+color: $background-colorWhite;
+margin: 0 20px 10px 0;
+}
+}
+&__links__section1{
+    min-width: 48px;
+}
+
+&__contact{
+    &__block{
+    max-width: 141px;
+    opacity: 0.7;
+}
+
+    &__title{
+        margin-bottom: 30px;
+    }
+
+    &__info{
+        padding-bottom: 15px;
+    }
+}
+
+&__social{
+    display: flex;
+    justify-content: space-between;
+
+    &__icon{
+        color: $background-colorWhite;
+        margin-top: 15px;
+    }
+
+    &__icon:not(:last-child){
+        margin-right: 25px;
+    }
+}
+
+&__links__block{
+    margin: 0 0 42px;
+}
+
+&__end{
+    background: $background-colorEnd;
+    
+}
+&__end__text{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $OpenSans-Font;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    margin-top: 20px;
+}
+}
+
+@media (max-width: $phoneWidth){
+    .footer{
+        &__company__block{
+            padding: 0 0 30px;
+        }
+    }
+    &__end__text{
+        margin: 20px 0 0;
+    }
+}

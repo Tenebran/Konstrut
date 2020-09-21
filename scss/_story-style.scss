@@ -1,0 +1,202 @@
+.story{
+    padding: 57px 0 115px;
+
+    &__block__title{
+    margin-bottom: 80px;
+    }
+
+    &__title{    
+    font-family: $OpenSans-Font;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+    color: $text-color;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+    &__line{ 
+        margin: 0 auto;
+        width: 50px;
+        height: 2px;
+        background-color: $text-colorHover;
+    }
+
+    &__text__title{
+        font-family: $OpenSans-Font;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.1875px;
+        color: $text-color;
+        max-width: 400px;
+    }
+
+    &__link{
+        color: $text-colorHover;
+    }
+
+
+    &__text__subtitle{
+        font-family: $OpenSans-Font;
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0.1875px;
+        color: $text-color;
+        padding: 30px 10px 119px 0;
+        max-width: 400px;
+       
+    }
+
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        font-family: $OpenSans-Font;
+        font-weight: 800;
+        font-size: 24px;
+        color: $background-colorWhite;
+        margin-left: 20px;
+        position: relative;
+        right: 0;
+        top: 30px;
+    }
+
+    &__item1{
+        background: url(../img/image/story1.png);
+        max-width: 140px;
+        height: 220px;
+        padding: 20px 20px;
+        line-height: 29px;
+        letter-spacing: 0.1875px;
+    }
+
+    &__item2{
+        background: url(../img/image/story2.png);
+        height: 220px;
+        max-width: 140px;
+        padding: 20px 20px;
+        line-height: 29px;
+        letter-spacing: 0.1875px;
+    }
+
+    &__item3{
+        background: url(../img/image/story3.png);
+        max-width: 140px;
+        height: 220px;
+        padding: 20px 20px;
+        line-height: 29px;
+        letter-spacing: 0.1875px;
+    }
+
+    &__our__title{
+        font-family: $OpenSans-Font;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 2.30625px;
+        color: $text-color;
+        padding: 0 0 10px 0;
+    }
+
+    &__our__line{
+        width: 50px;
+        height: 2px;
+        background-color: $text-colorHover;
+    }
+
+    &__our__text{
+        font-family: $OpenSans-Font;
+        font-size: 11px;
+        line-height: 19px;
+        letter-spacing: 0.2px;
+        color: $text-color;
+        max-width: 405px;
+    }
+
+   
+
+    &__button__link{
+        font-family: $OpenSans-Font;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        color: $background-colorWhite;
+        padding: 11px 29px;
+        background: $text-colorHover;
+    }
+
+    &__our{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu{
+        margin: 80px 0 0;
+        
+       
+        &__list{
+            padding: 38px 23px;
+            border: 1px solid $Border-colorGrey;
+            max-width: 290px;
+        }
+
+        &__title{
+            font-family: $OpenSans-Font;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.426667px;
+            color: $text-color;
+            padding: 25px 0 13px;
+        }
+
+        &__subtitle{
+            font-family: $OpenSans-Font;
+            font-size: 13px;
+            line-height: 23px;
+            letter-spacing: 0.1875px;
+            color: $text-color;
+        }
+    }
+}
+@media (max-width: $smDesktopWidth){
+    .story{
+        &__menu__list{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: $tableWidth){
+
+    .story{
+        padding: 57px 0 50px;
+    &__our{
+       display: inline-block;
+       width: 100%;
+       text-align: center;
+
+       &__line{
+           display: inline-block;
+       }
+
+       &__text{
+           display: inline-block;
+           margin-bottom: 50px;
+       }
+    }
+}
+}
+
+
+@media (max-width: $phoneWidth){
+    .story{
+        &__card{
+            display: block;
+        }
+        &__item{
+            margin: 10px auto;
+        }
+    }
+}

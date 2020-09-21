@@ -1,0 +1,68 @@
+.hello{
+    background: url(../img/image/common.png) no-repeat;
+    background-size: cover;
+    padding: 41px 0 71px 0;
+    text-align: center;
+    position: relative;
+    user-select: none;
+
+    &__title{
+        margin: 317px 0 0;
+        font-family: $BedasNeue-Font;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: 5.70937px;
+        color: $background-colorWhite;
+    }
+
+    &__subtitle{
+        font-family: $OpenSans-Font;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $background-colorWhite;
+        margin: 0 0 241px;
+    }
+
+    &__scroll{
+        font-family: $OpenSans-Font;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 3.7px;
+        color: $background-colorWhite;
+    }
+}
+
+@media (max-width: $smDesktopWidth){
+    .hello{
+        margin: 65px 0 0;
+    }
+}
+
+@media (max-width: $phoneWidth){
+    .hello{
+        padding: 41px 0 171px 0;
+
+        &__title{
+            margin: 100px 0 0;
+        }
+        &__subtitle{
+            margin: 0 0 141px;
+        }
+    }
+}
+
+@media (max-width: $smPhoneWidth){
+    .hello{
+        padding: 41px 0 271px 0;
+
+        &__title{
+            margin: 100px 0 0;
+        }
+        &__subtitle{
+            margin: 0 0 41px;
+        }
+    }
+}
+

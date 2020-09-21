@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('Bebas-Neue-Bold'),
+        url('../font/BebasNeueBold.woff2') format('woff2'),
+        url('../font/BebasNeueBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Regular'), local('Open-Sans-Regular'),
+        url('../font/OpenSans-Regular.woff2') format('woff2'),
+        url('../font/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .content__conteiner{
+    max-width: 920px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+::-webkit-scrollbar {
+    display: none;
+}

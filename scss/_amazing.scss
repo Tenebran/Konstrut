@@ -1,0 +1,37 @@
+.amazing{
+    background: url(../img/image/footer2.png) no-repeat;
+    background-size: cover;
+    bottom: 0;
+   padding: 130px 0 350px;
+   text-align: center;
+
+   &__title{
+       display: inline-block;
+    font-family: $OpenSans-Font;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: $text-color;
+    max-width: 350px;
+    padding: 0 0 46px;
+   }
+
+   &__button{
+       display: block;
+      margin: 0 auto;
+      max-width: 150px;
+      
+      &__link{
+    font-family: $OpenSans-Font;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: $background-colorWhite;
+   padding: 11px 26px;
+   background: $text-colorHover;
+   
+      }
+   }
+}
